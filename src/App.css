@@ -1,38 +1,109 @@
 .App {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: content-box;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  margin: 4px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#cont {
+  position: relative;
+  top: 58px;
+  /* border: 1px solid; */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#navbar {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-image: linear-gradient(
+    to top,
+    #b8235a 59%,
+    #801357 71%,
+    #3d1635 84%,
+    #1c1a27 100%
+  );
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+  padding: 10px 20px;
   color: white;
+  font-family: -webkit-pictograph;
 }
-
-.App-link {
-  color: #61dafb;
+button {
+  font-family: cursive;
+  padding: 6px;
+  color: red;
+  border-radius: 4px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+li {
+  list-style-type: none;
+  text-align: justify;
+}
+label {
+  width: 100%;
+  text-align: center;
+  font-size: xx-large;
+}
+span {
+  color: green;
+}
+img {
+  width: 100%;
+}
+input {
+  width: 75%;
+  border-top: hidden;
+  border-right: hidden;
+  border-left: hidden;
+  border-bottom: groove;
+  margin: 0 15px;
+  padding: 0;
+  font-size: 20px;
+}
+form {
+  padding: 10px;
+}
+@media only screen and (max-width: 400px) {
+  #recipe {
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 800px) and (min-width: 400px) {
+  #recipe {
+    /* padding-top:20px ; */
+    padding: 10px;
+    margin: 10px;
+    flex-basis: 40%;
+    height: 82vh;
+    overflow: hidden;
+    /* border: 1px solid; */
+  }
+  div#recipecontiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 801px) {
+  #recipe {
+    /* padding-top:20px ; */
+    padding: 10px;
+    margin: 10px;
+    width: 43%;
+    flex-basis: 40%;
+    height: auto;
+    overflow: hidden;
+    /* border: 1px solid; */
+  }
+  div#recipecontiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
